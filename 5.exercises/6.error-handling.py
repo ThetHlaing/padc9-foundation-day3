@@ -4,3 +4,10 @@
 
 first_number = input("First Number : ")
 second_number = input("Second Number : ")
+
+try:
+    int_first = int(first_number)
+    int_second = int(second_number)
+    print(int_first * int_second)
+except:
+    print("input is not a number")

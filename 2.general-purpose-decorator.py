@@ -13,11 +13,11 @@ function_with_noarguments()
 
 
 @decorator_with_args
-def function_with_arguments(a, b, c):
-    print(a, b, c)
+def function_with_arguments(a, b, c,**kwargs):
+    print(a, b, c,kwargs)
     print('function_with_arguments')
 
-function_with_arguments(1,2,3)
+function_with_arguments(1,2,3,test='1')
 
 @decorator_with_args
 def function_with_keyword_arguments():
